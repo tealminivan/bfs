@@ -1,0 +1,9 @@
+# Undirected graph (each unordered pair of nodes is saved once): smallworld.txt
+# Watts-Strogatz Small-world model. Every node links to K other nodes.
+# Nodes: 5 Edges: 5
+# NodeId	NodeId
+0	3
+0	1
+2	0
+2	1
+2	4
