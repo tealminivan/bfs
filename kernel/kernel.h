@@ -56,9 +56,6 @@ void invoke_spmmw_model(graph_t& graph, array2d_t<float> & input, array1d_t<floa
 
 void invoke_spmmw_model_without_bias(graph_t& graph, array2d_t<float> & input, array1d_t<float>& edge_weight, array2d_t<float> & output, op_t op, int64_t reverse);
 
-
-
-
 void invoke_spmmw_model_without_bias(graph_t& graph, array2d_t<float> & input, array1d_t<float>& edge_weight, array2d_t<float> & output, op_t op, int64_t reverse);
 
 

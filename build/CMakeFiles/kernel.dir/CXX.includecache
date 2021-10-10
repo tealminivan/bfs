@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tmv/Desktop/cs636-main/kernel/bfs.cpp
+cassert
+-
+iostream
+-
+csr.h
+/home/tmv/Desktop/cs636-main/kernel/csr.h
+list
+-
+vector
+-
+
+/home/tmv/Desktop/cs636-main/kernel/csr.h
+stdint.h
+/home/tmv/Desktop/cs636-main/kernel/stdint.h
+

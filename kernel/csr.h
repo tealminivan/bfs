@@ -21,6 +21,8 @@ class csr_t {
  public:
     csr_t() {
         //TODO initialize the members to a default value
+        v_count = 1000;
+        e_count = 3999;
     };
     void init(vid_t a_vcount, vid_t a_dstsize, void* a_offset, void* a_nebrs, int64_t a_flag, vid_t edge_count) {
         v_count = a_vcount;
@@ -75,6 +77,8 @@ class graph_t {
     coo_t coo;
  public:
     void init(vid_t a_vcount, vid_t a_dstsize, void* a_offset, void* a_nebrs, void* a_offset1, void* a_nebrs1, int64_t flag, int64_t num_vcount) {
+        csr.offset = (vid_t*)a_offset;
+        csr.nebrs = (vid_t*)a_nebrs;
     }
 
     vid_t get_vcount() {
