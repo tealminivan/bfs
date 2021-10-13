@@ -6,6 +6,7 @@
 extern int THD_COUNT;
     
 void run_bfs(graph_t& g, vid_t root);
+void run_bfs_parallel(graph_t& g, vid_t root);
 
 //_gspmv ---> spmm
 void invoke_spmm(graph_t& graph, array2d_t<float> & input, array2d_t<float> & output, 

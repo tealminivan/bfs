@@ -82,8 +82,8 @@ def bfs_python(offset, nebrs, root):
         prntList[level[i]].append(i)
     for i in range(len(prntList)):
         if len(prntList[i]) != 0: 
-            #print("level"+str(i)+": "+str(len(prntList[i]))+" vertices")
-            print("level"+str(i)+": "+str(len(prntList[i]))+" vertices"+ "   Nodes: "+str(prntList[i]))
+            print("level"+str(i)+": "+str(len(prntList[i]))+" vertices")
+            #print("level"+str(i)+": "+str(len(prntList[i]))+" vertices"+ "   Nodes: "+str(prntList[i]))
 
 
 def test_lanl_graph_python():

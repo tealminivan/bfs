@@ -70,6 +70,7 @@ class coo_t {
      }
 };
 
+
 class graph_t {
  public:
     csr_t csr;

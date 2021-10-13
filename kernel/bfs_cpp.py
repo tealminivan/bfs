@@ -59,7 +59,10 @@ def test_csr():
     G = kernel.init_graph(offset_csr, nebrs_csr, offset_csc, nebrs_csc, flag, v_count);
 
     root = 0;
+    print("Regular BFS:");
     G.run_bfs(0);
+    print("\nParallel BFS:")
+    G.run_bfs_parallel(0);
 
 def test_lanl_graph_python():
     

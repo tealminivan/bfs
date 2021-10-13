@@ -17,6 +17,10 @@ list
 -
 vector
 -
+omp.h
+-
+string.h
+-
 
 /home/tmv/Desktop/cs636-main/kernel/csr.h
 stdint.h
