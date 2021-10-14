@@ -131,7 +131,7 @@ void run_bfs_parallel(graph_t& g, vid_t root)
     }
 
     //code to print out nodes 
-    // for (int i=0; i<csr->v_count-1; i++){
+    // for (int i=0; i<csr->v_count; i++){
     //     if (prntList[i].size() != 0){
     //         cout << "level" << i << ": "<< prntList[i].size()<<" verticies  Nodes: [";
     //         for (int j=0; j<prntList[i].size(); j++){
