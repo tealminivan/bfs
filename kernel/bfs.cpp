@@ -79,7 +79,7 @@ void run_bfs_parallel(graph_t& g, vid_t root)
     vid_t* nebrs_list = csr-> nebrs;
     
     bool* visited = new bool[csr->v_count];
-    for (int i = 0; i < csr->v_count - 1; i++){
+    for (int i = 0; i < csr->v_count; i++){
         visited[i] = false;
     } 
     int level[csr->v_count];
@@ -119,17 +119,18 @@ void run_bfs_parallel(graph_t& g, vid_t root)
             currQueue = next_queue;
     }
 
+
     vector<vector<int>>prntList(csr->v_count);
-    for(int i=0; i<csr->v_count-1; i++){
+    for(int i=0; i<csr->v_count; i++){
         prntList[level[i]].push_back(i);
     }
-    for (int i=0; i<csr->v_count-1; i++){
+    for (int i=0; i<csr->v_count; i++){
         if (prntList[i].size() != 0){
             cout << "level" << i << ": "<< prntList[i].size()<<" verticies"<<endl;
         }
     }
 
-    // code to print out nodes 
+    //code to print out nodes 
     // for (int i=0; i<csr->v_count-1; i++){
     //     if (prntList[i].size() != 0){
     //         cout << "level" << i << ": "<< prntList[i].size()<<" verticies  Nodes: [";
